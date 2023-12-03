@@ -2,7 +2,7 @@
 
 function slugify(title) {
     let slug = title.toLowerCase();
-    slug = slug.join("-");
+    slug = slug.split(" ").join("-");
     return slug;
 }
 
